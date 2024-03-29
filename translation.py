@@ -20,7 +20,6 @@ def save_json(json_data, filename, option="a"):
     directory, _ = os.path.split(filename)
     if not os.path.exists(directory):
         os.makedirs(directory)
-
     filename = filename.replace(" ", "_")
     with open(filename, option, encoding="utf-8") as f:
         if not filename.endswith(".jsonl"):
@@ -61,6 +60,8 @@ def main():
         from models.TowerInstruct import translate_ko2en, translate_en2ko
     elif args.model == "synatra":
         from models.synatra import translate_ko2en, translate_en2ko
+    elif args.model == "seagull":
+        from models.seagull import translate_ko2en, translate_en2ko
     elif args.model == "iris_7b":
         from models.iris_7b import translate_ko2en, translate_en2ko
         if args.model_path:

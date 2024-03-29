@@ -28,6 +28,12 @@ templates = {
         'en2ko': '<|im_start|>user\nTranslate the following text from Korean into English.\nEnglish: {0}\nKorean:<|im_end|>\n<|im_start|>assistant',
         'trim_keywords': ['<|im_end|>'],
     },
+    'kuotient/Seagull-13b-translation': {
+        'stop_words': ['</s>', '</끝>', '<|im_end|>'],
+        'ko2en': '<|im_start|>system\n주어진 문장을 영어로 번역하세요.<|im_end|>\n<|im_start|>user\n{0}<|im_end|>\n<|im_start|>assistant',
+        'en2ko': '<|im_start|>system\n주어진 문장을 한국어로 번역하세요.<|im_end|>\n<|im_start|>user\n{0}<|im_end|>\n<|im_start|>assistant',
+        'trim_keywords': ['<|im_end|>'],
+    },
 }
 
 model_info = {'model': None, 'tokenizer': None, 'stopping_criteria': None}
