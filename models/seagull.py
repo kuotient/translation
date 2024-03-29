@@ -10,7 +10,7 @@ tokenizer = AutoTokenizer.from_pretrained("kuotient/Seagull-13b-translation")
 
 def translate_ko2en(text):
     messages = [
-        {"role": "system", "content": "주어진 문장을 한국어로 번역하세요."},
+        {"role": "system", "content": "주어진 문장을 영어로 번역하세요."},
         {"role": "user", "content": text},
     ]
 
@@ -30,7 +30,7 @@ def translate_ko2en(text):
 
 def translate_en2ko(text):
     messages = [
-        {"role": "system", "content": "주어진 문장을 영어로 번역하세요."},
+        {"role": "system", "content": "주어진 문장을 한국어로 번역하세요."},
         {"role": "user", "content": text},
     ]
 
