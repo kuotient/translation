@@ -18,20 +18,20 @@ templates = {
     },
     'maywell/Synatra-7B-v0.3-Translation': {
         'stop_words': ['</s>', '</끝>', '<|im_end|>'],
-        'ko2en': '<|im_start|>system\n주어진 문장을 영어로 번역해라.<|im_end|>\n<|im_start|>user\n{0}<|im_end|>\n<|im_start|>assistant',
-        'en2ko': '<|im_start|>system\n주어진 문장을 한국어로 번역해라.<|im_end|>\n<|im_start|>user\n{0}<|im_end|>\n<|im_start|>assistant',
+        'ko2en': '<|im_start|>system\n주어진 문장을 영어로 번역해라.<|im_end|>\n<|im_start|>user\n{0}<|im_end|>\n<|im_start|>assistant\n',
+        'en2ko': '<|im_start|>system\n주어진 문장을 한국어로 번역해라.<|im_end|>\n<|im_start|>user\n{0}<|im_end|>\n<|im_start|>assistant\n',
         'trim_keywords': ['<|im_end|>'],
     },
     'Unbabel/TowerInstruct-7B-v0.1': {
         'stop_words': ['</s>', '</끝>', '<|im_end|>'],
-        'ko2en': '<|im_start|>user\nTranslate the following text from English into Korean.\nKorean: {0}\nEnglish:<|im_end|>\n<|im_start|>assistant',
-        'en2ko': '<|im_start|>user\nTranslate the following text from Korean into English.\nEnglish: {0}\nKorean:<|im_end|>\n<|im_start|>assistant',
+        'ko2en': '<|im_start|>user\nTranslate the following text from English into Korean.\nKorean: {0}\nEnglish:<|im_end|>\n<|im_start|>assistant\n',
+        'en2ko': '<|im_start|>user\nTranslate the following text from Korean into English.\nEnglish: {0}\nKorean:<|im_end|>\n<|im_start|>assistant\n',
         'trim_keywords': ['<|im_end|>'],
     },
     'kuotient/Seagull-13b-translation': {
         'stop_words': ['</s>', '</끝>', '<|im_end|>'],
-        'ko2en': '<|im_start|>system\n주어진 문장을 영어로 번역하세요.<|im_end|>\n<|im_start|>user\n{0}<|im_end|>\n<|im_start|>assistant',
-        'en2ko': '<|im_start|>system\n주어진 문장을 한국어로 번역하세요.<|im_end|>\n<|im_start|>user\n{0}<|im_end|>\n<|im_start|>assistant',
+        'ko2en': '<|im_start|>system\n주어진 문장을 영어로 번역하세요.<|im_end|>\n<|im_start|>user\n{0}<|im_end|>\n<|im_start|>assistant\n',
+        'en2ko': '<|im_start|>system\n주어진 문장을 한국어로 번역하세요.<|im_end|>\n<|im_start|>user\n{0}<|im_end|>\n<|im_start|>assistant\n',
         'trim_keywords': ['<|im_end|>'],
     },
 }
